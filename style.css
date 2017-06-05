@@ -14,10 +14,12 @@ html, body {
 #searchbar {
     margin: 15px 0;
     width: 500px;
+    height: 20px;
     padding: 10px;
     outline: none;
-    box-shadow: 0 1px 10px 1px rgba(0,0,0,0.2);
-    border: none;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,0.25);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
 }
 
 #container {
