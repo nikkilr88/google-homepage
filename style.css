@@ -26,3 +26,9 @@ html, body {
     text-align: center;
     vertical-align: middle;
 }
+
+@media only screen and (max-width: 525px) {
+    #searchbar {
+        width: 90%;
+    }
+}
