@@ -7,6 +7,15 @@ html, body {
     font-family: sans-serif;
 }
 
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 nav {
     position: absolute;
     right: 0;
@@ -57,18 +66,23 @@ nav ul li img {
 
 #searchbar {
     margin: 15px 0;
-    width: 500px;
+    width: 525px;
     height: 20px;
     padding: 10px;
     outline: none;
-    box-shadow: 0 2px 8px -1px rgba(0,0,0,0.2);
-    border: 1px solid rgba(0,0,0,0.1);
+    font-size: 16px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,0.25);
+    border: 1px solid rgba(0,0,0,0.12);
     border-radius: 3px;
     background: url(https://s20.postimg.org/pawo2a359/l5_S4_LZ2_-_Imgur.png) no-repeat;
     background-position: right 10px center;
     background-size: 25px;
     right: 0;
 
+}
+
+#searchbar:hover, #searchbar:focus {
+    box-shadow: 0 2px 8px -1px rgba(0,0,0,0.25);
 }
 
 #container {
@@ -126,7 +140,7 @@ footer ul li:hover {
     float: left;
 }
 
-@media only screen and (max-width: 525px) {
+@media only screen and (max-width: 560px) {
     #searchbar {
         width: 90%;
     }

@@ -6,23 +6,24 @@
     <title>Google Homepage</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="script.js"></script>
 
   </head>
   <body>
     <nav>
       <ul>
-        <li>Gmail</li>
-        <li>Images</li>
+        <li><a href="https://gmail.com">Gmail</a></li>
+        <li><a href="https://images.google.com/">Images</a></li>
         <li><i class="material-icons">apps</i></li>
         <li><div id="notifications"> 3 </div></li>
-        <li><img src="https://s20.postimg.org/j4cuckfot/IMG_20170210_153311_620.jpg"></li>
+        <li><a href="https://github.com/nikkilr88"><img src="https://s20.postimg.org/j4cuckfot/IMG_20170210_153311_620.jpg"></a></li>
       </ul>
     </nav>
       <div id="container">
           <img id="logo" src="https://www.google.com.mx/logos/doodles/2017/world-environment-day-2017-5117250985000960.2-law.gif">
           <input id="searchbar" type="text"><br />
-          <button>Google Search</button> <button>I'm Feeling Lucky</button>
+          <button id="searchTerm">Google Search</button> <button id="lucky">I'm Feeling Lucky</button>
       </div>
       <footer>
         <ul class="left">
