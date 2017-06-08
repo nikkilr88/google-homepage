@@ -4,6 +4,46 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    color: #555;
+}
+
+nav ul{
+    margin: 15px;
+    padding: 0;
+    font-size: 12px;
+}
+
+nav ul li{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 8px;
+}
+
+nav ul li img {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+.material-icons {
+    margin-top: 3px;
+}
+
+#notifications {
+    background: #EA4335;
+    padding: 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    text-align:center;
+    line-height: 12px;
+    color: whitesmoke;
 }
 
 #logo {
@@ -17,9 +57,14 @@ html, body {
     height: 20px;
     padding: 10px;
     outline: none;
-    box-shadow: 0 2px 1px -1px rgba(0,0,0,0.25);
+    box-shadow: 0 2px 8px -1px rgba(0,0,0,0.2);
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 3px;
+    background: url(https://s20.postimg.org/pawo2a359/l5_S4_LZ2_-_Imgur.png) no-repeat;
+    background-position: right 10px center;
+    background-size: 25px;
+    right: 0;
+
 }
 
 #container {
@@ -29,8 +74,59 @@ html, body {
     vertical-align: middle;
 }
 
+#container button {
+    background: #F3F3F3;
+    border: none;
+    padding: 10px;
+    margin: 25px 5px;
+    border-radius: 3px;
+    color: #888;
+    font-weight: bold;
+}
+
+#container button:hover {
+    color: #222;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #F2F2F2;
+    color: #777;
+    font-size: 13px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 10px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
 @media only screen and (max-width: 525px) {
     #searchbar {
         width: 90%;
     }
+    footer {
+        display: none;
+    }
+    #logo {
+        width: 60%;
+    }
+    
 }
