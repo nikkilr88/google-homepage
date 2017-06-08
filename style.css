@@ -114,6 +114,10 @@ footer ul li {
     padding: 5px;
 }
 
+footer ul li:hover {
+    cursor: pointer;
+}
+
 .right {
     float: right;
 }
