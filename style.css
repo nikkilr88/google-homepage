@@ -74,11 +74,28 @@ nav ul li img {
     box-shadow: 0 2px 1px -1px rgba(0,0,0,0.25);
     border: 1px solid rgba(0,0,0,0.12);
     border-radius: 3px;
-    background: url(https://s20.postimg.org/pawo2a359/l5_S4_LZ2_-_Imgur.png) no-repeat;
+    /*background: url(https://s20.postimg.org/pawo2a359/l5_S4_LZ2_-_Imgur.png) no-repeat;*/
     background-position: right 10px center;
     background-size: 25px;
     right: 0;
 
+}
+
+section {
+    display: inline-block;
+    position: relative;
+    width: auto;
+}
+
+#mic {
+    position: absolute;
+    height: 25px;
+    right: 12px;
+    top: 23px;
+}
+
+#mic:hover {
+    cursor: pointer;
 }
 
 #searchbar:hover, #searchbar:focus {
@@ -141,8 +158,11 @@ footer ul li:hover {
 }
 
 @media only screen and (max-width: 560px) {
-    #searchbar {
+    section {
         width: 90%;
+    }
+    #searchbar {
+        width: inherit;
     }
     footer {
         display: none;
