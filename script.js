@@ -2,6 +2,12 @@
 /* global webkitSpeechRecognition */
 
 $(document).ready(function(){
+    
+    $('#apps').on('click', function(){
+        console.log('test');
+        $('#panel').css('display') == 'none' ? $('#panel').css('display', 'block') : $('#panel').css('display', 'none');
+    });
+    
     $('#searchTerm').on('click', function(){
         var searchTerm = $('#searchbar').val();
         if(searchTerm !== ''){
@@ -18,6 +24,8 @@ $(document).ready(function(){
         window.open('https://www.google.com/doodles', '_self');
     });
     
+    
+    // HTML5 Voice Recognition
     $('#mic').on('click', startDictation);
     
     function startDictation() {
