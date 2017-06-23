@@ -4,7 +4,6 @@
 $(document).ready(function(){
     
     $('#apps').on('click', function(){
-        console.log('test');
         $('#panel').css('display') == 'none' ? $('#panel').css('display', 'block') : $('#panel').css('display', 'none');
     });
     
